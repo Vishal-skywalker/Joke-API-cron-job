@@ -2,7 +2,7 @@ const cron = require('node-cron');
 const axios = require('axios');
 require('dotenv').config();
 
-cron.schedule('0 0 21 * * *', sendJoke, { timezone: 'Asia/Kolkata' });
+cron.schedule('0 0 23 * * *', sendJoke, { timezone: 'Asia/Kolkata' });
 
 async function sendJoke() {
     try {
